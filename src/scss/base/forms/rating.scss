@@ -3,15 +3,22 @@
 .rating {
     display: flex;
     align-items: flex-end;
-    font-size: 40px;
+    font-size: rem(30);
     line-height: 0.75;
     transition: opacity 0.3s ease 0s;
 }
-
 .rating.rating_sending {
     opacity: 0.2;
 }
 
+.rating__body {
+    position: relative;
+    letter-spacing: em(8, 30);
+}
+.rating__body::before {
+    content: "★★★★★";
+    display: block;
+}
 .rating__active {
     position: absolute;
     top: 0;
@@ -20,27 +27,6 @@
     height: 100%;
     overflow: hidden;
 }
-
-.rating__item {
-    flex: 0 0 20%;
-    height: 100%;
-    opacity: 0;
-}
-
-.rating.rating_set .rating__active,
-.rating.rating_set .rating__item {
-    cursor: pointer;
-}
-
-.rating__body {
-    position: relative;
-}
-
-.rating__body::before {
-    content: "★★★★★";
-    display: block;
-}
-
 .rating__active::before {
     content: "★★★★★";
     position: absolute;
@@ -60,8 +46,25 @@
     height: 100%;
 }
 
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+
 .rating__value {
+    display: none;
     padding: 0 0 0 10px;
     font-size: 50%;
     line-height: 1;
+}
+
+.rating__info {
+    font-size: rem(16);
+    color: #777e90;
+}
+
+.rating.rating_set .rating__active,
+.rating.rating_set .rating__item {
+    cursor: pointer;
 }

@@ -2,14 +2,16 @@
 // Снипет (HTML): qa
 .quantity {
     display: flex;
-    width: 88px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     border: 1px solid rgba(166, 166, 166, 0.45);
     // .quantity__button
     &__button {
         position: relative;
-        flex: 0 0 30px;
+        flex: 0 0 50px;
+        height: rem(50);
         cursor: pointer;
+        background-color: #000;
         &::before,
         &::after {
             content: "";

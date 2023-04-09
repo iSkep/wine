@@ -7,6 +7,9 @@
     gap: 15px;
     &__item {
         font-size: rem(20);
+        &:not(:last-child) {
+            margin-bottom: em(30, 20);
+        }
     }
     &__title {
         position: relative;

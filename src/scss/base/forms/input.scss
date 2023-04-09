@@ -4,20 +4,24 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
+    &:focus {
+        outline: none;
+    }
 }
 .input {
     display: block;
     width: 100%;
     padding: 0 20px;
-    border: 1px solid #eee;
     border-radius: 0 !important;
-    &._form-focus {
+    &._focus {
     }
-    &._form-error {
+    &._error {
     }
 }
 textarea.input {
-    padding: 0 0;
+    padding: 0;
     resize: none;
 }
