@@ -1,10 +1,13 @@
-# [SITE NAME](https://sitename-skep.netlify.app/) | Site description
+# [WINE AVENUE](https://wine-skep.netlify.app/) | Wine Store
 
 ## 🐱‍💻 Tech stack
 * HTML, CSS, SCSS
 * JavaScript
 * Gulp, Webpack
 * BEM
+* Swiper
+* noUiSlider
+* Tippy
 
 # 📜 Template Description
 ## ⌨️ Commands

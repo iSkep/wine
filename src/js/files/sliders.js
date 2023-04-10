@@ -24,8 +24,8 @@ import '../../scss/base/swiper.scss';
 // import 'swiper/css';
 
 function buildSliders() {
-    //BildSlider
     let sliders = document.querySelectorAll('[class*="__swiper"]:not(.swiper-wrapper)');
+
     if (sliders) {
         sliders.forEach((slider) => {
             slider.parentElement.classList.add('swiper');
