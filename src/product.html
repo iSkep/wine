@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.htm',{
+    "title":"Карточка товара"
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.htm',{})
+            <main class="page page_inner">
+                <div class="page__header">
+                    <div class="page__container">
+                        <nav class="page__breadcrumbs breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span class="breadcrumbs__current">Bistrot Chic Merlot Cabernet Sauvignon Syrah</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__container">
+                        <div class="product__main main-product">
+                            <div class="main-product__images images-product">
+                                <div class="images-product__slider">
+                                    <div class="images-product__swiper">
+                                        <div class="images-product__slide-ibg">
+                                            <img src="@img/product/01.png" alt="">
+                                        </div>
+                                        <div class="images-product__slide-ibg">
+                                            <img src="@img/product/02.png" alt="">
+                                        </div>
+                                        <div class="images-product__slide-ibg">
+                                            <img src="@img/product/03.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="images-product__thumbs thumbs-images">
+                                    <div class="thumbs-images__swiper">
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/product/01-preview.png" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/product/02-preview.png" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/product/03-preview.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="main-product__body body-product">
+                                <div class="body-product__header header-product">
+                                    <div class="header-product__line">
+                                        <h1 class="header-product__title">Bistrot Chic Merlot Cabernet Sauvignon Syrah</h1>
+                                        <a href="" class="header-product__link _icon-compare"></a>
+                                        <a href="" class="header-product__link _icon-favorite"></a>
+                                    </div>
+                                    <div class="header-product__rating rating rating_set">
+                                        <div class="rating__body">
+                                            <div class="rating__active"></div>
+                                            <div class="rating__items">
+                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                            </div>
+                                        </div>
+                                        <div class="rating__value">5</div>
+                                    </div>
+                                </div>
+                                <div class="body-product__table table-product">
+                                    <div class="table-product__label">Цвет</div>
+                                    <div class="table-product__value">Красное</div>
+                                    <div class="table-product__label">Тип</div>
+                                    <div class="table-product__value">Полусухое</div>
+                                    <div class="table-product__label">Бренд</div>
+                                    <div class="table-product__value">Bistrot Chic</div>
+                                    <div class="table-product__label">Объем</div>
+                                    <div class="table-product__value">0.75</div>
+                                    <div class="table-product__label">Крепость</div>
+                                    <div class="table-product__value">13%-15%</div>
+                                    <div class="table-product__label">Страна</div>
+                                    <div class="table-product__value">Франция</div>
+                                    <div class="table-product__label">Артикул:</div>
+                                    <div class="table-product__value">1313360</div>
+                                </div>
+                                <div class="body-product__actions actions-product">
+                                    <div class="actions-product__price">525 грн</div>
+                                    <div class="actions-product__row">
+                                        <div data-quantity class="actions-product__quantity quantity">
+                                            <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                                            <div class="quantity__input">
+                                                <input data-quantity-value autocomplete="off" type="number" name="form[]" value="1">
+                                            </div>
+                                            <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                                        </div>
+                                        <div class="actions-product__buttons">
+                                            <a href="" class="actions-product__cart button"><span class="_icon-cart">В корзину</span></a>
+                                            <a href="" class="actions-product__button button button_black">Купить в 1 клик</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tabs="991.98" data-tabs-animate class="product__info product-info">
+                            <nav data-tabs-titles class="product-info__navigation">
+                                <button type="submit" class="product-info__title _tab-active">Описание</button>
+                                <button type="submit" class="product-info__title">Отзывы</button>
+                                <button type="submit" class="product-info__title">Доставка</button>
+                            </nav>
+                            <div data-tabs-body class="product-info__content">
+                                <div class="product-info__body">
+                                    <p class="product-info__desc"><strong>Вкус:</strong> богатый, сбалансированный, сочный, интенсивный. Гармоничное и продолжительное послевкусие создают оттенки ягод.</p>
+                                    <p class="product-info__desc"><strong>Цвет:</strong> темно-красный, в бокале можно увидеть фиолетовые оттенки.</p>
+                                    <p class="product-info__desc"><strong>Аромат:</strong> напоминает летнюю грядку со спелой ежевикой и черной смородиной, легкий, сладковатый.
+                                    <p class="product-info__desc"><strong>Гастрономия:</strong> отлично подойдет к ростбифу, телятине с грибами или тушеной ягненке. Подходит практически ко всем блюдам из мяса, подчеркивая их вкус и аромат.</p>
+                                </div>
+                                <div class="product-info__body">
+                                    <p class="product-info__desc">Отзывов об этом товаре еще не было.</p>
+                                </div>
+                                <div class="product-info__body">
+                                    <p class="product-info__desc">Бесплатная доставка по Украине.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_popup.htm',{})
+        @@include('html/_js.htm',{})
+    </body>
+</html>

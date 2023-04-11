@@ -27,7 +27,12 @@
     &_black {
         padding: rem(8) rem(30);
         color: #fff;
-        background-color: #000;
+        background-color: $mainDarkColor;
         box-shadow: none;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 0 4px 25px rgba($mainDarkColor, 1);
+            }
+        }
     }
 }

@@ -11,6 +11,16 @@ textarea {
         outline: none;
     }
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .input {
     display: block;
     width: 100%;
@@ -21,6 +31,7 @@ textarea {
     &._error {
     }
 }
+
 textarea.input {
     padding: 0;
     resize: none;
